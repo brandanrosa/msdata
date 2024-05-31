@@ -7,9 +7,10 @@
 #' @return a data set
 #' @export
 #'
+#' @importFrom readxl read_xls
+#'
 #' @examples \dontrun{msdata(x = "DDT")}
 msdata <- function(x) {
-  library(readxl)
   front <- "C:/R_Packages/Excel/"
   end <- ".XLS"
   read_xls(paste0(front, x, end))
