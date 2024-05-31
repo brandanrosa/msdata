@@ -1,0 +1,39 @@
+---
+title: "MSDATA"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{msdata}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(msdata)
+```
+
+# Introduction
+
+This function calls the named data set into the session from the MS Data sets.
+
+# Example
+
+```{r}
+msdata("FIREDAM")
+```
+
+# Example
+
+```{r}
+ddt <- msdata(x = "DDT")
+head(ddt)
+```
+
+
+
