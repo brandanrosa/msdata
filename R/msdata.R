@@ -15,3 +15,4 @@ msdata <- function(x) {
   end <- ".XLS"
   read_xls(paste0(front, x, end))
 }
+
